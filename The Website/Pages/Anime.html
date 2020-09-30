@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miku E-SKpo</title>
+    <link rel="stylesheet" href="../CSS/mikuE.css">
+</head>
+
+<body>
+    <script src="jquery-3.5.1.min.js"></script>
+    <div class="header">
+        <div class="box">
+            <h2>
+                Miku E-SKpo
+            </h2>
+        </div>
+        <ul>
+            <li>
+                <a href="../FirstPage/Miku E.html">Home</a>
+            </li>
+            
+            <li>
+                <a class="color" href="About.html">About</a>
+            </li>
+    
+            <li>
+                <a href="Merch.html">Merch</a>
+            </li>
+    
+            <li>
+                <a class="color" href="Buy Ticket.html">Buy Ticket</a>
+            </li>
+
+            <li>
+                <a id ="cg" href="Concert Gallery.html">Concert Gallery<p><i class="arrow down"></i></p</a>
+                <ul class="sub">
+                    <li>
+                        <a class="color" href="Kpop.html">Kpop</a>
+                    </li>
+                    <li>
+                        <a href="USA.html">USA</a>
+                    </li>
+                    <li>
+                        <a class="color" href="Anime.html">Anime</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+     
+    </div>
+
+    <div class="home">
+        <h2 id="top-space">
+             ANIME Concert
+        </h2>
+        <div id="theconcert">
+            <div class="pictures">
+                <span class="prev"><<</span>
+                <div class="slider-inner">
+                    <img src="../asset/hatsune.jpg" class="active">
+                    <img src="../asset/ren.jpg">
+                    <img src="../asset/kaito.png">
+                    <img src="../asset/IA.jpg">
+                    <img src="../asset/luka.jpg">
+                </div>
+                <span class="next">>></span>
+            </div> <br>
+
+            <h3>
+                Concert Gallery Anime Situation
+            </h3>
+            <p>The technology behind putting together a Vocaloid concert is actually very cool.
+                Another wonderful thing about Vocaloid concerts/ Anime concerts is that it celebrates
+                the wonderful music made by so many different producers. The company in charge of
+                Vocaloid, Crypton, finds what Vocaloid songs are the most popular online and contacts 
+                the producers who made them to ask if they can include those songs in their concerts. 
+                Every song played at a Vocaloid concert is accompanied by real musicians as well as the holographic
+                 Vocaloid doing unique dances while singing. It might sound silly, but it can create a really awesome effect altogether!
+            </p>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h5>Copyright &copy; 2020 by E-SKpo</h5>
+    </div>
+
+    <script>
+        $('.next').click(function()
+        {
+            var currentImg = $('.active');
+            var nextImg = currentImg.next();
+
+            if(nextImg.length)
+            {
+                currentImg.removeClass('active').css('z-index', -10);
+                nextImg.addClass('active').css('z-index', 10);
+            }
+        });
+
+        $('.prev').click(function()
+        {
+            var currentImg = $('.active');
+            var prevImg = currentImg.prev();
+
+            if(prevImg.length)
+            {
+                currentImg.removeClass('active').css('z-index', -10);
+                prevImg.addClass('active').css('z-index', 10);
+            }
+        });
+    </script>
+
+</body>
+</html>

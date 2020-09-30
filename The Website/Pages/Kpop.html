@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miku E-SKpo</title>
+    <link rel="stylesheet" href="../CSS/mikuE.css">
+</head>
+
+<body>
+    <script src="jquery-3.5.1.min.js"></script>
+    <div class="header">
+        <div class="box">
+            <h2>
+                Miku E-SKpo
+            </h2>
+        </div>
+        <ul>
+            <li>
+                <a href="../FirstPage/Miku E.html">Home</a>
+            </li>
+            
+            <li>
+                <a class="color" href="About.html">About</a>
+            </li>
+    
+            <li>
+                <a href="Merch.html">Merch</a>
+            </li>
+    
+            <li>
+                <a class="color" href="Buy Ticket.html">Buy Ticket</a>
+            </li>
+
+            <li>
+                <a id ="cg" href="Concert Gallery.html">Concert Gallery<p><i class="arrow down"></i></p</a>
+                <ul class="sub">
+                    <li>
+                        <a class="color" href="Kpop.html">Kpop</a>
+                    </li>
+                    <li>
+                        <a href="USA.html">USA</a>
+                    </li>
+                    <li>
+                        <a class="color" href="Anime.html">Anime</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+     
+    </div>
+
+    <div class="home">
+        <h2 id="top-space">
+              K-POP Concert
+        </h2>
+        <div id="theconcert">
+            <div class="pictures">
+                <span class="prev"><<</span>
+                <div class="slider-inner">
+                    <img src="../asset/suju.jpg" class="active">
+                    <img src="../asset/bts.jpg">
+                    <img src="../asset/twice.jpg">
+                    <img src="../asset/seventeen.jpg">
+                    <img src="../asset/IU.jpg">
+                </div>
+                <span class="next">>></span>
+            </div> <br>
+
+            <h3>
+                Concert Gallery Kpop Situation
+            </h3>
+            <p>K-pop is a genre of popular music originating in South Korea. While the modern form of K-pop 
+                can be traced back to the early 90s, the term itself has been popularized since the 2000s.
+                Modern K-pop "idol" culture began with the boy band H.O.T. in 1996, as K-pop grew into a 
+                subculture that amassed enormous fandoms of teenagers and young adults. After a slump in early K-pop, 
+                from 2003 TVXQ and BoA started a new generation of K-pop idols that broke the music genre into the neighboring 
+                Japanese market and continue to popularize K-pop internationally today. With the advent of online social networking services and Korean TV shows, 
+                the current spread of K-pop and Korean entertainment, known as the Korean Wave, is seen not only in East Asia and Southeast Asia, 
+                but also in Pakistan, Bangladesh, India, Latin America, North Africa, Southern Africa, the Middle East and throughout the Western world, 
+                gaining a widespread global audience.</p>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h5>Copyright &copy; 2020 by E-SKpo</h5>
+    </div>
+
+    <script>
+        $('.next').click(function()
+        {
+            var currentImg = $('.active');
+            var nextImg = currentImg.next();
+
+            if(nextImg.length)
+            {
+                currentImg.removeClass('active').css('z-index', -10);
+                nextImg.addClass('active').css('z-index', 10);
+            }
+        });
+
+        $('.prev').click(function()
+        {
+            var currentImg = $('.active');
+            var prevImg = currentImg.prev();
+
+            if(prevImg.length)
+            {
+                currentImg.removeClass('active').css('z-index', -10);
+                prevImg.addClass('active').css('z-index', 10);
+            }
+        });
+    </script>
+
+</body>
+</html>

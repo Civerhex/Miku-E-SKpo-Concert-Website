@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miku E-SKpo</title>
+    <link rel="stylesheet" href="../CSS/mikuE.css">
+    <script src="Buy Ticket.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <h2>
+                Miku E-SKpo
+            </h2>
+        </div>
+        <ul>
+            <li>
+                <a href="../FirstPage/Miku E.html">Home</a>
+            </li>
+            
+            <li>
+                <a class="color" href="About.html">About</a>
+            </li>
+    
+            <li>
+                <a href="Merch.html">Merch</a>
+            </li>
+    
+            <li>
+                <a class="color" href="Buy Ticket.html">Buy Ticket</a>
+            </li>
+
+            <li>
+                <a id ="cg" href="Concert Gallery.html">Concert Gallery<p><i class="arrow down"></i></p</a>
+                <ul class="sub">
+                    <li>
+                        <a class="color" href="Kpop.html">Kpop</a>
+                    </li>
+                    <li>
+                        <a href="USA.html">USA</a>
+                    </li>
+                    <li>
+                        <a class="color" href="Anime.html">Anime</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="body">
+        <h2>
+            Purchase Ticket Form
+        </h2> <br>
+           
+        <div id="box">
+            <form class="form" id="form">
+                <div id="parts">
+                    <label>Ticket Type</label><br>
+                    <select id="selection">
+                        <option value="Platinum">Platinum</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Bronze">Bronze</option>
+                    </select>
+                </div>
+
+                <div id="parts">
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Fullname" id="name">
+                </div>
+
+                <div id="parts">
+                    <label>Email</label><br>
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+
+                <div id="pieces">
+                    <label>Phone</label><br>
+                    <input type="text" placeholder="Phone number" id="phone">
+                </div>
+
+                <div id="textadd">
+                    <label>Address</label><br>
+                    <textarea id="address" cols="53" rows="2" placeholder="Street"></textarea>
+                </div><br>
+
+                <div id="agree">
+                    <input type="checkbox" name="checkbox" id="agreement" value="check" onclick="getCheck()">
+                    <label for="agreement">I Agree with the Terms and Services</label>
+                </div><br>
+
+                <div id="error"></div><br>
+            
+                <div id="confirm">
+                    <input type="reset" value="Reset" id="clickButton1" onclick="resetNotif()">
+                    <input type="button" value="Submit" id="clickButton1" onclick="submitCheck()">
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+
+        
+    </div>
+    <div class="footer">
+        <h5>Copyright &copy; 2020 by E-SKpo</h5>
+    </div>
+
+</body>
+</html>
